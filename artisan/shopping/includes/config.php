@@ -24,6 +24,8 @@ $db['default']['dbcollat'] = 'utf8_general_ci';
 $db['default']['swap_pre'] = '';
 $db['default']['autoinit'] = TRUE;
 $db['default']['stricton'] = FALSE;
+
+$conn = new mysqli($cleardb_server, $cleardb_user, $cleardb_password, $cleardb_db);
 // define('DB_SERVER','localhost');
 // define('DB_USER','root');
 // define('DB_PASS' ,'');
