@@ -25,8 +25,8 @@ app.use((req, res, next) => {
 // });
 
 app.use(express.static(__dirname + '/artisan'));
-app.get('/artisan', (req, res) => {
-  res.render('index.html', {
+app.get('/', (req, res) => {
+  res.render('artisan/index.html', {
     pageTitle: 'Home page'
   });
 });
